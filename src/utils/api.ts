@@ -60,7 +60,8 @@ export const trackRegistration = async (data: {
 
 export const sendToGoogleSheet = async (data: RegistrationFormData): Promise<void> => {
   try {
-    await axios.post(`${import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000'}/api/save-to-sheet`, {
+    const backendUrl = (import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000').replace(/\/$/, '')
+    await axios.post(`${backendUrl}/api/save-to-sheet`, {
       username: data.username,
       password: data.password,
       currency: data.currency,
