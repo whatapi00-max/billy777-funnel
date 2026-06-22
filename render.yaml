@@ -1,0 +1,22 @@
+services:
+  # Backend Node.js server
+  - type: web
+    name: billy777-backend
+    runtime: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: VITE_GOOGLE_SHEET_URL
+        sync: false
+
+  # Frontend React app
+  - type: web
+    name: billy777-frontend
+    runtime: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: VITE_BACKEND_URL
+        sync: false
+      - key: VITE_GOOGLE_SHEET_URL
+        sync: false
