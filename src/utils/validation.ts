@@ -55,7 +55,7 @@ export const validateUsername = (username: string): string => {
   return ''
 }
 
-export const validatePassword = (password: string): string => {
+export const validatePassword = (_password: string): string => {
   return ''
 }
 

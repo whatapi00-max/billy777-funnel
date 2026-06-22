@@ -84,7 +84,7 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({ onSuccess }) => {
 
       if (response.redirectUrl) {
         setTimeout(() => {
-          window.location.href = response.redirectUrl
+          window.location.href = response.redirectUrl as string
         }, 2000)
       }
     } catch (error: any) {
@@ -185,7 +185,7 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({ onSuccess }) => {
             name="referrerCode"
             type="text"
             placeholder="Enter Referrer Code"
-            value={formData.referrerCode}
+            value={formData.referrerCode || ''}
             onChange={handleInputChange}
             error={errors.referrerCode}
           />
