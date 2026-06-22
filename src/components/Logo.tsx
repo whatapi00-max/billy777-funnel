@@ -5,7 +5,7 @@ const Logo: React.FC = () => {
     <div className="flex justify-center mb-4">
       <div className="text-center">
         <img 
-          src="/logo.png" 
+          src="/logo billy777.png" 
           alt="BILLY777 Logo" 
           className="h-12 sm:h-14 w-auto mx-auto"
         />
