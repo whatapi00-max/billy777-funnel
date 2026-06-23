@@ -75,18 +75,16 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({ onSuccess }) => {
     setLoading(true)
 
     try {
-      const response = await registerUser(formData)
+      await registerUser(formData)
 
       await sendToGoogleSheet(formData)
 
       setSubmitSuccess(true)
       onSuccess(formData)
 
-      if (response.redirectUrl) {
-        setTimeout(() => {
-          window.location.href = response.redirectUrl as string
-        }, 2000)
-      }
+      setTimeout(() => {
+        window.location.href = 'https://billy777.com/'
+      }, 2000)
     } catch (error: any) {
       setSubmitError(error.message || 'Registration failed. Please try again.')
     } finally {
