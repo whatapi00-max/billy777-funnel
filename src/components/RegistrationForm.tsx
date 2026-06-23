@@ -16,7 +16,7 @@ interface RegistrationFormProps {
 const RegistrationForm: React.FC<RegistrationFormProps> = ({ onSuccess }) => {
   const [formData, setFormData] = useState<RegistrationFormData>({
     username: '',
-    currency: 'PKR',
+    currency: 'NPR',
     password: '',
     confirmPassword: '',
     phoneNumber: '',
@@ -143,7 +143,7 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({ onSuccess }) => {
             value={formData.currency}
             onChange={handleInputChange}
             options={[
-              { value: 'PKR', label: 'PKR' },
+              { value: 'NPR', label: 'NPR - Nepal' },
               { value: 'USD', label: 'USD' },
               { value: 'INR', label: 'INR' },
               { value: 'AED', label: 'AED' },
