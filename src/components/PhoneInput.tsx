@@ -18,10 +18,9 @@ const PhoneInput: React.FC<PhoneInputProps> = ({
   required,
 }) => {
   const countryCodes = [
-    { code: '+91', country: 'India' },
-    { code: '+92', country: 'Pakistan' },
-    { code: '+971', country: 'UAE' },
     { code: '+977', country: 'Nepal' },
+    { code: '+91', country: 'India' },
+    { code: '+971', country: 'UAE' },
     { code: '+880', country: 'Bangladesh' },
     { code: '+44', country: 'UK' },
     { code: '+1', country: 'USA/Canada' },

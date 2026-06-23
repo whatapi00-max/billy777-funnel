@@ -20,7 +20,7 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({ onSuccess }) => {
     password: '',
     confirmPassword: '',
     phoneNumber: '',
-    countryCode: '+92',
+    countryCode: '+977',
     referrerCode: '',
     agreeToTerms: false,
   })
