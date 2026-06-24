@@ -103,12 +103,6 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({ onSuccess }) => {
           </h2>
         </div>
 
-        <div className="flex items-center gap-4 mb-4">
-          <div className="flex-1 h-px bg-gray-600"></div>
-          <span className="text-gray-500 text-sm font-medium">OR</span>
-          <div className="flex-1 h-px bg-gray-600"></div>
-        </div>
-
         <form onSubmit={handleSubmit} className="space-y-3">
           <FormInput
             label="Username"
