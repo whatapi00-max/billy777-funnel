@@ -101,9 +101,6 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({ onSuccess }) => {
           <h2 className="text-lg sm:text-xl font-bold text-white text-center mb-1">
             Register as New User
           </h2>
-          <p className="text-xs sm:text-sm text-gray-400 text-center">
-            Get your instant ID from whatsapp
-          </p>
         </div>
 
         <a href="https://wa.link/billy247_am" target="_blank" rel="noopener noreferrer" className="rounded mb-4 overflow-hidden flex no-underline">
@@ -128,6 +125,7 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({ onSuccess }) => {
             label="Username"
             name="username"
             type="text"
+            placeholder="Username"
             value={formData.username}
             onChange={handleInputChange}
             error={errors.username}
