@@ -11,16 +11,11 @@ function App() {
     setShowSuccess(true)
   }
 
-  const handleCloseSuccess = () => {
-    setShowSuccess(false)
-    setSuccessData(null)
-  }
-
   return (
     <div className="h-screen flex items-center justify-center p-2 sm:p-4 overflow-hidden">
       <RegistrationForm onSuccess={handleRegistrationSuccess} />
       {showSuccess && (
-        <SuccessModal data={successData} onClose={handleCloseSuccess} />
+        <SuccessModal data={successData} />
       )}
     </div>
   )

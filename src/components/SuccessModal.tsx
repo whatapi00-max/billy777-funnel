@@ -3,10 +3,9 @@ import { RegistrationFormData } from '../types'
 
 interface SuccessModalProps {
   data: RegistrationFormData
-  onClose: () => void
 }
 
-const SuccessModal: React.FC<SuccessModalProps> = ({ data, onClose }) => {
+const SuccessModal: React.FC<SuccessModalProps> = ({ data }) => {
   const handleRedirect = () => {
     window.location.href = 'https://billy777.com/'
   }
