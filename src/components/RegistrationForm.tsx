@@ -128,7 +128,6 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({ onSuccess }) => {
             label="Username"
             name="username"
             type="text"
-            placeholder="Username"
             value={formData.username}
             onChange={handleInputChange}
             error={errors.username}
